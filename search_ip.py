@@ -1,4 +1,5 @@
 import requests
+import re
 from bs4 import BeautifulSoup
 url1="http://ip.tool.chinaz.com/"
 url2="http://www.ip138.com/"
@@ -8,8 +9,7 @@ r=requests.get(url1+net)
 #r.raise_for_status()
 webcode = r.text
 soup = BeautifulSoup(webcode,'html.parser')
-for link in soup.find_all('span'):
-    if link.attrs.values() == "Whwtdhalf w15-0":
+for link in soup.find_all('span','Whwtdhalf w15-0',string = re.compile("www")):
         print(link.string)
     #提取其中的IP地址net2（使用bs4）
 #     net2='123'
