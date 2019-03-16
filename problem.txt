@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "c:\Users\10426\.vscode\extensions\ms-python.python-2019.2.5558\pythonFiles\ptvsd_launcher.py", line 45, in <module>
+    main(ptvsdArgs)
+  File "c:\Users\10426\.vscode\extensions\ms-python.python-2019.2.5558\pythonFiles\lib\python\ptvsd\__main__.py", line 357, in main
+    run()
+  File "c:\Users\10426\.vscode\extensions\ms-python.python-2019.2.5558\pythonFiles\lib\python\ptvsd\__main__.py", line 257, in run_file
+    runpy.run_path(target, run_name='__main__')
+  File "C:\Users\10426\AppData\Local\Programs\Python\Python37-32\lib\runpy.py", line 263, in run_path
+    pkg_name=pkg_name, script_name=fname)
+  File "C:\Users\10426\AppData\Local\Programs\Python\Python37-32\lib\runpy.py", line 96, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File "C:\Users\10426\AppData\Local\Programs\Python\Python37-32\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "h:\python项目\py-net-spider\china_university2.py", line 34, in <module>
+    main()
+  File "h:\python项目\py-net-spider\china_university2.py", line 32, in main
+    fillUnivList(uinfo, html)
+  File "h:\python项目\py-net-spider\china_university2.py", line 17, in fillUnivList
+    for tr in soup.find('tbody').children:
+AttributeError: 'NoneType' object has no attribute 'children'
+PS H:\python项目> cd 'h:\python项目'; ${env:PYTHONIOENCODING}='UTF-8'; ${env:PYTHONUNBUFFERED}='1'; & 'C:/Users/10426/AppData/Local/Programs/Python/Python37-32/python' 'c:\Users\10426\.vscode\extensions\ms-python.python-2019.2.5558\pythonFiles\ptvsd_launcher.py' '--default' '--client' '--host' 'localhost' '--port' '49687' 'h:\python项目\py-net-spider\china_university2.py'
